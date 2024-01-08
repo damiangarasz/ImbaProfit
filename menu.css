@@ -34,22 +34,25 @@ header {
 .main-nav {
     position: fixed;
     display: none;
-    right: 200px;
-    top: 0;
+    top: 50px;
     max-height: 100%;
     transition: right 0.3s ease;
     z-index: 999;
     gap: 2em;
     margin: 0.6rem 0.7rem 0 0;
     padding-top: 2rem;
+    overflow-x: visible;
+    overflow-y: auto;
+    background-color: #212121;
 }
 
 .main-nav a {
     display: block;
+    color: red;
 }
 
-#main-menu:target {
-    display: block;
+.main-nav:target{
+    display:block;
     right: 0;
 }
 
@@ -58,8 +61,6 @@ header {
     right: 0;
     top: 0;
 }
-
-
 
 .main-nav li {
     text-decoration: none;
