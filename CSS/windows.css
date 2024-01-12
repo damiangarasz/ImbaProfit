@@ -1,0 +1,50 @@
+.windows {
+    height: calc(50vh - 50px - 2rem);
+    display: grid;
+    grid-template-areas: 
+    "strategy charts"
+    "socials contact";
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.button {
+    border-radius: 0;
+    border: none;
+    font-size: 2rem;
+}
+
+.button:hover,
+.button:focus {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.video {
+    height: calc(50vh - 25px);
+}
+
+.strategy {
+    grid-area: strategy;
+    background-color: #466B9E;
+}
+
+.charts {
+    grid-area: charts;
+    background-color: #466B9E;
+}
+
+.socials {
+    grid-area: socials;
+    background-color: #EBB632;
+}
+
+.contact {
+    grid-area: contact;
+    background-color: #3EE3A3;
+}
+
+.icon{
+    display: block;
+    margin: auto;
+}

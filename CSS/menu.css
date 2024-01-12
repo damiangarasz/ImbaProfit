@@ -43,10 +43,10 @@ header {
     flex-direction: column;
     align-items: center;
     background-color: #c79c2ff3;
-    width: 50%;
-    height: 100%;
+    width: 200px;
+    height: 100vh;
     justify-content: space-evenly;
-    
+    z-index: 1000;
 }
 
 #main-nav:target{
@@ -70,4 +70,5 @@ header {
 .svg {
     fill: #EBB632;
 }
+
 
