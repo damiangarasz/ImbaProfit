@@ -1,0 +1,29 @@
+@import url('menu.css');
+@import url('main.css');
+
+:root {
+    --color-primary-background--white: #EEFAF7;
+    --color-main-theme-gold: #EBB632;
+
+    --font-logo: 'black ops one';
+    --font-size-logo: 30px;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: "Lato";
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+

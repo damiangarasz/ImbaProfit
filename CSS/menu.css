@@ -1,19 +1,19 @@
 .logo1 {
     font-family: var(--font-logo);
-    text-shadow: -2px 5px 10px rgba(66, 68, 90, 1);
+    text-shadow: -2px 5px 10px #EBB632;
     font-size: var(--font-size-logo);
 }
 
 .logo2 {
     font-family: var(--font-logo);
     color: var(--color-main-theme-gold);
-    text-shadow: -2px 5px 10px rgba(66, 68, 90, 1);
+    text-shadow: -2px 5px 10px rgb(22, 21, 21);
     font-size: var(--font-size-logo)
 }
 
 header {
     background: rgb(33,33,33);
-    background: radial-gradient(circle at 2.9166666666666665% 43.333333333333336%, rgb(198 152 37) 0%, 14.84%, rgba(235,182,50,0) 28%), radial-gradient(circle at 5.416666666666667% 20.833333333333336%, #737590 0%, 20.4%, rgba(115,117,144,0) 34%), radial-gradient(circle at 48.9013671875% 49.521484375%, #212121 0%, 100%, rgba(33,33,33,0) 100%);
+    background: radial-gradient(circle at 2.9166666666666665% 43.333333333333336%, rgba(235,182,50,0.46) 0%, 14.84%, rgba(235,182,50,0) 28%), radial-gradient(circle at 5.416666666666667% 20.833333333333336%, #737590 0%, 20.4%, rgba(115,117,144,0) 34%), radial-gradient(circle at 48.9013671875% 49.521484375%, #212121 0%, 100%, rgba(33,33,33,0) 100%);
     height: 75px;
 }
 
@@ -23,43 +23,34 @@ header {
 }
 
 .logo-img {
-    height: 3rem;
+    height: 2.7rem;
     margin-left: 1rem;
 }
 
 .logo {
-    flex-basis: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 .main-nav {
+    margin: 0;
+    padding: 0;
     position: fixed;
-    display: none;
-    top: 50px;
-    max-height: 100%;
-    transition: right 0.3s ease;
-    z-index: 999;
-    gap: 2em;
-    margin: 0.6rem 0.7rem 0 0;
-    padding-top: 2rem;
-    overflow-x: visible;
-    overflow-y: auto;
-    background-color: #212121;
-}
-
-.main-nav a {
-    display: block;
-    color: red;
-}
-
-.main-nav:target{
-    display:block;
-    right: 0;
-}
-
-.menu-button {
-    position: relative;
     right: 0;
     top: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c79c2ff3;
+    width: 50%;
+    height: 100%;
+    justify-content: space-evenly;
+    
+}
+
+#main-nav:target{
+    display: flex;
 }
 
 .main-nav li {
@@ -67,26 +58,16 @@ header {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    color: var(--color-primary-background--white);
+    color: black;
     font-weight: 700;
-    font-size: 20px;
-    min-height: 100%;
-    width: 200px;
+    font-size: 30px;
 }
 
-.language-pick {
-    display: block;
+.hamburger-toggle {
+    margin-right: 1rem;
 }
 
-.language-pick li {
-    text-decoration: none;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.svg {
+    fill: #EBB632;
 }
 
-/* menu */
-
-.main-menu-close {
-    display: none;
-}
