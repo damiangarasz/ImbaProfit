@@ -1,0 +1,128 @@
+:root{
+    --color-mr-c: orange;
+    --color-mr-jam: #bf9100;
+    --color-jam: #1055cc;
+    --color-mr-f: #ffff00;
+    --color-l-f: #cccccc;
+    --color-l-jam: #b6d7a8;
+    --color-l-c-c: #674fa7;
+    --color-l-iso: #9fc5e9;
+    --color-call-x: #69a84f;
+    --color-iso-3b: #f4cccc;
+    --color-none: white;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.chwytak {
+    display: flex;
+    height: calc(50vh - 25px);
+    justify-content: space-around;
+}
+
+.fishreg button,
+.pozycja button{
+    background-color: #50668b;
+    border: none;
+    color:#fff;
+    -webkit-box-shadow: inset -26px -26px 52px -40px rgba(72, 72, 72, 1);
+    -moz-box-shadow: inset -26px -26px 52px -40px rgba(72, 72, 72, 1);
+    box-shadow: inset -26px -26px 52px -40px rgba(72, 72, 72, 1);
+}
+
+.fishreg button:hover,
+.pozycja button:hover{
+    -webkit-box-shadow: inset 0px 0px 24px -11px rgba(255, 248, 42, 1);
+    -moz-box-shadow: inset 0px 0px 24px -11px rgba(255, 248, 42, 1);
+    box-shadow: inset 0px 0px 24px -11px rgba(255, 248, 42, 1);
+    cursor: pointer;
+    color:#ffed27;
+}
+
+.pozycja{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3px;
+    padding: 7px 0 7px 0;
+}
+
+.stacksize2{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3px;
+    padding: 7px 0 7px 0;
+}
+.button-stack{
+    border: none;
+}
+
+.button-stack:hover{
+    -webkit-box-shadow: inset 0px 0px 24px -11px rgba(255, 248, 42, 1);
+    -moz-box-shadow: inset 0px 0px 24px -11px rgba(255, 248, 42, 1);
+    box-shadow: inset 0px 0px 24px -11px rgba(255, 248, 42, 1);
+}
+
+.button-poz{
+    width: 80px;
+    height: 5vh;
+}
+
+.button-stack{
+    width: 80px;
+    height: 5vh;
+}
+
+.tabela{
+    background-color: black;
+}
+
+.chwytak {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+.tabela tr td{
+
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 3.3vh;
+    width: 4.2vw;
+}
+
+.tabela:hover{
+    cursor:default;
+}
+
+.AA{
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.HUBBfish,
+.SBvBBfish,
+.BBvSBfish,
+.SBvBTNfish,
+.BBvBTNfish,
+.BTNfish{
+    display: none;
+}
+
+.vfish{
+    display: flex;
+    gap: 10px;
+}

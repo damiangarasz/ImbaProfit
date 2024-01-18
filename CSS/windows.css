@@ -1,6 +1,7 @@
 .windows {
     height: calc(50vh - 50px - 2rem);
     display: grid;
+    min-width: 430px;
     grid-template-areas: 
     "strategy charts"
     "socials contact";
