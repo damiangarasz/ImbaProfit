@@ -1,51 +1,51 @@
 .windows {
-    height: calc(50vh - 50px - 2rem);
-    display: grid;
-    min-width: 430px;
-    grid-template-areas: 
+  height: calc(50vh - 50px - 2rem);
+  display: grid;
+  min-width: 430px;
+  grid-template-areas:
     "strategy charts"
     "socials contact";
-    gap: 1rem;
-    margin: 1rem;
+  gap: 1rem;
+  margin: 1rem;
 }
 
 .button {
-    border-radius: 0;
-    border: none;
-    font-size: 2rem;
+  border-radius: 0;
+  border: none;
+  font-size: 2rem;
 }
 
 .button:hover,
 .button:focus {
-    cursor: pointer;
-    opacity: 0.9;
+  cursor: pointer;
+  opacity: 0.9;
 }
 
 .video {
-    height: calc(50vh - 25px);
+  height: calc(50vh - 25px);
 }
 
 .strategy {
-    grid-area: strategy;
-    background-color: #466B9E;
+  grid-area: strategy;
+  background-color: #466b9e;
 }
 
 .charts {
-    grid-area: charts;
-    background-color: #466B9E;
+  grid-area: charts;
+  background-color: #466b9e;
 }
 
 .socials {
-    grid-area: socials;
-    background-color: #EBB632;
+  grid-area: socials;
+  background-color: #ebb632;
 }
 
 .contact {
-    grid-area: contact;
-    background-color: #3EE3A3;
+  grid-area: contact;
+  background-color: #3ee3a3;
 }
 
-.icon{
-    display: block;
-    margin: auto;
+.icon {
+  display: block;
+  margin: auto;
 }
