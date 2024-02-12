@@ -9,14 +9,14 @@
   margin: 1rem;
 }
 
-.button {
+.menu-button {
   border-radius: 0;
   border: none;
   font-size: 2rem;
 }
 
-.button:hover,
-.button:focus {
+.menu-button:hover,
+.menu-button:focus {
   cursor: pointer;
   opacity: 0.9;
 }

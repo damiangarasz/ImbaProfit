@@ -1,34 +1,50 @@
 const Router = {
   init: () => {
-    console.log("jestem init");
-    document.querySelectorAll("a.nav-link").forEach((link) => {
-      link.addEventListener("click", (event) => {
-        event.preventDefault();
-        const url = link.href;
+    document.querySelectorAll(".menu-button").forEach((button) => {
+      button.addEventListener("click", (event) => {
+        const url = event.target.value;
         Router.go(url);
       });
     });
-    Router.go(location.pathname);
+
+    document.querySelectorAll(".nav-link").forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        const url = event.target.getAttribute("href");
+        Router.go(url);
+      });
+    });
+
+    window.addEventListener("popstate", (event) => {
+      Router.go(event.state.path, false);
+    });
+
+    Router.go(window.location.pathname);
   },
   go: function go(path, addToHistory = true) {
-    history.pushState({ path }, null, path);
+    if (addToHistory) {
+      history.pushState({ path }, null, path);
+    }
 
     let pageElement = null;
 
     switch (path) {
-      case "/home":
+      case "/home/":
         return;
-      case "/videos":
+      case "/videos/":
         return;
-      case "/blog":
+      case "/blog/":
         return;
-      case "/strategy":
+      case "/strategy/":
         return;
-      case "/charts":
+      case "/charts/":
+        document.querySelector(".content").innerHTML = "";
+        pageElement = document.createElement("charts-page");
+        document.querySelector(".content").appendChild(pageElement);
         return;
-      case "/socials":
+      case "/socials/":
         return;
-      case "/contact":
+      case "/contact/":
         return;
     }
   },
