@@ -4,16 +4,14 @@ export class Charts extends HTMLElement {
     this.root = this.attachShadow({ mode: "open" });
 
     const styles = document.createElement("style");
-    this.root.appendChild(styles);
-
-    //TODO zaaplikowac do shadow DOM style z case 
 
     async function loadCSS() {
-      const request = await fetch("../charts/base.css");
+      const request = await fetch("base.css");
       const css = await request.text();
       styles.textContent = css;
     }
     loadCSS();
+    this.root.appendChild(styles);
   }
 
   connectedCallback() {
@@ -29,6 +27,18 @@ export class Charts extends HTMLElement {
         const sheet = document.querySelector(".sheet-chart");
 
         switch (przycisk) {
+          case "HUSBfish":
+            sheet.href = "./CSS-charts/fishHUSB16.css";
+            break;
+          case "HUSBfish":
+            sheet.href = "./CSS-charts/fishHUSB16.css";
+            break;
+          case "HUSBfish":
+            sheet.href = "./CSS-charts/fishHUSB16.css";
+            break;
+          case "HUSBfish":
+            sheet.href = "./CSS-charts/fishHUSB16.css";
+            break;
           case "HUSBfish":
             sheet.href = "./CSS-charts/fishHUSB16.css";
             break;
