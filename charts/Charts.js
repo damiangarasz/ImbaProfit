@@ -52,6 +52,42 @@ export class Charts extends HTMLElement {
           case "HUSBfish-8":
             doStuff("./CSS-charts/fishHUSB-8.css");
             break;
+          case "HUBBfish16":
+            doStuff("./CSS-charts/fishHUBB16.css");
+            break;
+          case "HUBBfish13-15":
+            doStuff("./CSS-charts/fishHUBB13-15.css");
+            break;
+          case "HUBBfish10-12":
+            doStuff("./CSS-charts/fishHUBB10-12.css");
+            break;
+          case "HUBBfish7-9":
+            doStuff("./CSS-charts/fishHUBB7-9.css");
+            break;
+          case "HUBBfishvL16":
+            doStuff("./CSS-charts/fishLHUBB16.css");
+            break;
+          case "HUBBfishvL13-15":
+            doStuff("./CSS-charts/fishLHUBB13-15.css");
+            break;
+          case "HUBBfishvL10-12":
+            doStuff("./CSS-charts/fishLHUBB10-12.css");
+            break;
+          case "SBvBBfish20":
+            doStuff("./CSS-charts/fishSBvBB20.css");
+            break;
+          case "SBvBBfish16-19":
+            doStuff("./CSS-charts/fishSBvBB16-19.css");
+            break;
+          case "SBvBBfish13-15":
+            doStuff("./CSS-charts/fishSBvBB13-15.css");
+            break;
+          case "SBvBBfish10-12":
+            doStuff("./CSS-charts/fishSBvBB10-12.css");
+            break;
+          case "SBvBBfish-9":
+            doStuff("./CSS-charts/fishSBvBB-10.css");
+            break;
         }
       });
     }
@@ -59,7 +95,6 @@ export class Charts extends HTMLElement {
       n.addEventListener("click", (event) => {
         const przycisk = event.target.value;
 
-        //TODO
         let off = this.root.querySelectorAll(".stacksize2");
         let chart1 = this.root.querySelector(".HUSBfish");
         let chart2 = this.root.querySelector(".HUBBfish");
