@@ -19,31 +19,103 @@ export class Charts extends HTMLElement {
     const content = template.content.cloneNode(true);
     this.root.appendChild(content);
 
+    const buttonyStack = this.root.querySelectorAll(".button-stack");
     const buttony = this.root.querySelectorAll(".button-poz");
+    const sheet = this.root.querySelector(".sheet-chart");
 
-    for (let n of buttony)
+    const elementLoL = document.createElement("style");
+    async function doStuff(inject) {
+      const request = await fetch(inject);
+      const css = await request.text();
+      elementLoL.textContent = css;
+    }
+
+    this.root.appendChild(elementLoL);
+
+    for (let n of buttonyStack) {
       n.addEventListener("click", (event) => {
         const przycisk = event.target.value;
-        const sheet = document.querySelector(".sheet-chart");
 
         switch (przycisk) {
-          case "HUSBfish":
-            sheet.href = "./CSS-charts/fishHUSB16.css";
+          case "HUSBfish16":
+            doStuff("./CSS-charts/fishHUSB16.css");
             break;
-          case "HUSBfish":
-            sheet.href = "./CSS-charts/fishHUSB16.css";
+          case "HUSBfish13-15":
+            doStuff("./CSS-charts/fishHUSB13-15.css");
             break;
-          case "HUSBfish":
-            sheet.href = "./CSS-charts/fishHUSB16.css";
+          case "HUSBfish10-12":
+            doStuff("./CSS-charts/fishHUSB10-12.css");
             break;
-          case "HUSBfish":
-            sheet.href = "./CSS-charts/fishHUSB16.css";
+          case "HUSBfish8-9":
+            doStuff("./CSS-charts/fishHUSB8-9.css");
             break;
-          case "HUSBfish":
-            sheet.href = "./CSS-charts/fishHUSB16.css";
+          case "HUSBfish-8":
+            doStuff("./CSS-charts/fishHUSB-8.css");
             break;
         }
       });
+    }
+    for (let n of buttony) {
+      n.addEventListener("click", (event) => {
+        const przycisk = event.target.value;
+
+        //TODO
+        let off = this.root.querySelectorAll(".stacksize2");
+        let chart1 = this.root.querySelector(".HUSBfish");
+        let chart2 = this.root.querySelector(".HUBBfish");
+        let chart3 = this.root.querySelector(".SBvBBfish");
+        let chart4 = this.root.querySelector(".BBvSBfish");
+        let chart5 = this.root.querySelector(".SBvBTNfish");
+        let chart6 = this.root.querySelector(".BBvBTNfish");
+        let chart7 = this.root.querySelector(".BTNfish");
+        switch (przycisk) {
+          case "HUSBfish":
+            off.forEach((element) => {
+              element.style.display = "none";
+            });
+            console.log(chart1);
+            chart1.style.display = "flex";
+            console.log(chart1);
+            break;
+          case "HUBBfish":
+            off.forEach((element) => {
+              element.style.display = "none";
+            });
+            chart2.style.display = "flex";
+            break;
+          case "SBvBBfish":
+            off.forEach((element) => {
+              element.style.display = "none";
+            });
+            chart3.style.display = "flex";
+            break;
+          case "BBvSBfish":
+            off.forEach((element) => {
+              element.style.display = "none";
+            });
+            chart4.style.display = "flex";
+            break;
+          case "SBvBTNfish":
+            off.forEach((element) => {
+              element.style.display = "none";
+            });
+            chart5.style.display = "flex";
+            break;
+          case "BBvBTNfish":
+            off.forEach((element) => {
+              element.style.display = "none";
+            });
+            chart6.style.display = "flex";
+            break;
+          case "BTNfish":
+            off.forEach((element) => {
+              element.style.display = "none";
+            });
+            chart7.style.display = "flex";
+            break;
+        }
+      });
+    }
   }
 }
 
