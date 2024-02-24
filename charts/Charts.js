@@ -37,56 +37,101 @@ export class Charts extends HTMLElement {
         const przycisk = event.target.value;
 
         switch (przycisk) {
-          case "HUSBfish16":
-            doStuff("./CSS-charts/fishHUSB16.css");
+          case "BBvBTNfish10-12":
+            doStuff("./CSS-charts/fishBBvBTN10-12.css");
             break;
-          case "HUSBfish13-15":
-            doStuff("./CSS-charts/fishHUSB13-15.css");
+          case "BBvBTNfish13-15":
+            doStuff("./CSS-charts/fishBBvBTN13-15.css");
             break;
-          case "HUSBfish10-12":
-            doStuff("./CSS-charts/fishHUSB10-12.css");
+          case "BBvBTNfish16":
+            doStuff("./CSS-charts/fishBBvBTN16.css");
             break;
-          case "HUSBfish8-9":
-            doStuff("./CSS-charts/fishHUSB8-9.css");
+          case "BBvSBfish10-12":
+            doStuff("./CSS-charts/fishBBvSB10-12.css");
             break;
-          case "HUSBfish-8":
-            doStuff("./CSS-charts/fishHUSB-8.css");
+          case "BBvSBfish13-15":
+            doStuff("./CSS-charts/fishBBvSB13-15.css");
             break;
-          case "HUBBfish16":
-            doStuff("./CSS-charts/fishHUBB16.css");
+          case "BBvSBfish16":
+            doStuff("./CSS-charts/fishBBvSB16.css");
             break;
-          case "HUBBfish13-15":
-            doStuff("./CSS-charts/fishHUBB13-15.css");
+          case "BBvSBvLfish13-19":
+            doStuff("./CSS-charts/fishBBvSBvL13-19.css");
             break;
-          case "HUBBfish10-12":
-            doStuff("./CSS-charts/fishHUBB10-12.css");
+          case "BBvSBvLfish20":
+            doStuff("./CSS-charts/fishBBvSBvL20.css");
+            break;
+          case "BTNfish11":
+            doStuff("./CSS-charts/fishBTN-12.css");
+            break;
+          case "BTNfish12-15":
+            doStuff("./CSS-charts/fishBTN12-15.css");
+            break;
+          case "BTNfish16-17":
+            doStuff("./CSS-charts/fishBTN16-17.css");
+            break;
+          case "BTNfish18":
+            doStuff("./CSS-charts/fishBTN18.css");
             break;
           case "HUBBfish7-9":
             doStuff("./CSS-charts/fishHUBB7-9.css");
             break;
-          case "HUBBfishvL16":
-            doStuff("./CSS-charts/fishLHUBB16.css");
+          case "HUBBfish10-12":
+            doStuff("./CSS-charts/fishHUBB10-12.css");
             break;
-          case "HUBBfishvL13-15":
-            doStuff("./CSS-charts/fishLHUBB13-15.css");
+          case "HUBBfish13-15":
+            doStuff("./CSS-charts/fishHUBB13-15.css");
             break;
-          case "HUBBfishvL10-12":
+          case "HUBBfish16":
+            doStuff("./CSS-charts/fishHUBB16.css");
+            break;
+          case "HUSBfish-8":
+            doStuff("./CSS-charts/fishHUSB-8.css");
+            break;
+          case "HUSBfish8-9":
+            doStuff("./CSS-charts/fishHUSB8-9.css");
+            break;
+          case "HUSBfish10-12":
+            doStuff("./CSS-charts/fishHUSB10-12.css");
+            break;
+          case "HUSBfish13-15":
+            doStuff("./CSS-charts/fishHUSB13-15.css");
+            break;
+          case "HUSBfish16":
+            doStuff("./CSS-charts/fishHUSB16.css");
+            break;
+          case "HUBBfishL10-12":
             doStuff("./CSS-charts/fishLHUBB10-12.css");
             break;
-          case "SBvBBfish20":
-            doStuff("./CSS-charts/fishSBvBB20.css");
+          case "HUBBfishL13-15":
+            doStuff("./CSS-charts/fishLHUBB13-15.css");
             break;
-          case "SBvBBfish16-19":
-            doStuff("./CSS-charts/fishSBvBB16-19.css");
+          case "":
+            doStuff("");
             break;
-          case "SBvBBfish13-15":
-            doStuff("./CSS-charts/fishSBvBB13-15.css");
+          case "":
+            doStuff("");
             break;
-          case "SBvBBfish10-12":
-            doStuff("./CSS-charts/fishSBvBB10-12.css");
+          case "":
+            doStuff("");
             break;
-          case "SBvBBfish-9":
-            doStuff("./CSS-charts/fishSBvBB-10.css");
+          case "":
+            doStuff("");
+            break;
+          case "":
+            doStuff("");
+            break;
+          case "":
+            doStuff("");
+            break;
+          case "":
+            doStuff("");
+            break;
+          case "":
+            doStuff("");
+            break;
+          case "":
+            doStuff("");
             break;
         }
       });
