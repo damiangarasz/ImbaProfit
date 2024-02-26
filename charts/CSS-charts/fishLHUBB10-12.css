@@ -31,8 +31,8 @@
 .QQ{background: linear-gradient(to bottom, var(--color-l-iso) 0%, var(--color-l-iso) 100%);}
 .QJs{background: linear-gradient(to bottom, var(--color-jam) 0%, var(--color-jam) 100%);}
 .QTs{background: linear-gradient(to bottom, var(--color-jam) 0%, var(--color-jam) 100%);}
-.Q9s{background: linear-gradient(to bottom, var(--color-iso-3b) 0%, var(--color-iso-3b) 100%);}
-.Q8s{background: linear-gradient(to bottom, var(--color-iso-3b) 0%, var(--color-iso-3b) 100%);}
+.Q9s{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
+.Q8s{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
 .Q7s{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
 .Q6s{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
 .Q5s{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
@@ -45,8 +45,8 @@
 .QJ{background: linear-gradient(to bottom, var(--color-jam) 0%, var(--color-jam) 100%);}
 .JJ{background: linear-gradient(to bottom, var(--color-l-iso) 0%, var(--color-l-iso) 100%);}
 .JTs{background: linear-gradient(to bottom, var(--color-jam) 0%, var(--color-jam) 100%);}
-.J9s{background: linear-gradient(to bottom, var(--color-iso-3b) 0%, var(--color-iso-3b) 100%);}
-.J8s{background: linear-gradient(to bottom, var(--color-iso-3b) 0%, var(--color-iso-3b) 100%);}
+.J9s{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
+.J8s{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
 .J7s{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
 .J6s{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
 .J5s{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
@@ -59,8 +59,8 @@
 .QT{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
 .JT{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
 .TT{background: linear-gradient(to bottom, var(--color-l-iso) 0%, var(--color-l-iso) 100%);}
-.T9s{background: linear-gradient(to bottom, var(--color-iso-3b) 0%, var(--color-iso-3b) 100%);}
-.T8s{background: linear-gradient(to bottom, var(--color-iso-3b) 0%, var(--color-iso-3b) 100%);}
+.T9s{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
+.T8s{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
 .T7s{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
 .T6s{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
 .T5s{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
@@ -69,12 +69,12 @@
 .T2s{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
 
 .A9{background: linear-gradient(to bottom, var(--color-jam) 0%, var(--color-jam) 100%);}
-.K9{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
+.K9{background: linear-gradient(to bottom, var(--color-jam) 0%, var(--color-jam) 100%);}
 .Q9{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
 .J9{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
 .T9{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
 .a99{background: linear-gradient(to bottom, var(--color-jam) 0%, var(--color-jam) 100%);}
-.a98s{background: linear-gradient(to bottom, var(--color-iso-3b) 0%, var(--color-iso-3b) 100%);}
+.a98s{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
 .a97s{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
 .a96s{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
 .a95s{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
@@ -83,7 +83,7 @@
 .a92s{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
 
 .A8{background: linear-gradient(to bottom, var(--color-jam) 0%, var(--color-jam) 100%);}
-.K8{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
+.K8{background: linear-gradient(to bottom, var(--color-jam) 0%, var(--color-jam) 100%);}
 .Q8{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
 .J8{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}
 .T8{background: linear-gradient(to bottom, var(--color-none) 0%, var(--color-none) 100%);}

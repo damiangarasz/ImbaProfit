@@ -64,7 +64,7 @@ export class Charts extends HTMLElement {
           case "BBvSBfishvL-12":
             doStuff("./CSS-charts/fishBBvSBvL-12.css");
             break;
-          case "BTNfish11":
+          case "BTNfish-11":
             doStuff("./CSS-charts/fishBTN-12.css");
             break;
           case "BTNfish12-15":
@@ -133,7 +133,7 @@ export class Charts extends HTMLElement {
           case "SBvBTNfish16-19":
             doStuff("./CSS-charts/fishSBvBTN16-19.css");
             break;
-          case "SBvBTN20":
+          case "SBvBTNfish20":
             doStuff("./CSS-charts/fishSBvBTN20.css");
             break;
         }
