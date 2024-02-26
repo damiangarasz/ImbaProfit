@@ -55,11 +55,14 @@ export class Charts extends HTMLElement {
           case "BBvSBfish16":
             doStuff("./CSS-charts/fishBBvSB16.css");
             break;
-          case "BBvSBvLfish13-19":
+          case "BBvSBfishvL13-19":
             doStuff("./CSS-charts/fishBBvSBvL13-19.css");
             break;
-          case "BBvSBvLfish20":
+          case "BBvSBfishvL20":
             doStuff("./CSS-charts/fishBBvSBvL20.css");
+            break;
+          case "BBvSBfishvL-12":
+            doStuff("./CSS-charts/fishBBvSBvL-12.css");
             break;
           case "BTNfish11":
             doStuff("./CSS-charts/fishBTN-12.css");
@@ -100,13 +103,13 @@ export class Charts extends HTMLElement {
           case "HUSBfish16":
             doStuff("./CSS-charts/fishHUSB16.css");
             break;
-          case "HUBBfishL10-12":
+          case "HUBBfishvL10-12":
             doStuff("./CSS-charts/fishLHUBB10-12.css");
             break;
-          case "HUBBfishL13-15":
+          case "HUBBfishvL13-15":
             doStuff("./CSS-charts/fishLHUBB13-15.css");
             break;
-          case "HUBBfishL16":
+          case "HUBBfishvL16":
             doStuff("./CSS-charts/fishLHUBB16.css");
             break;
           case "SBvBBfish-10":
