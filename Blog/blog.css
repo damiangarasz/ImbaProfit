@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(235, 255, 248);
+}
+
+small {
+    margin-left: 1rem;
+}
+
+figure {
+  max-width: 300px;
+  margin: 1.5rem auto;
+  border: 1px solid black;
+  background-color: rgba(244, 244, 244, 0.536);
+  transition: 0.5s ease;
+}
+
+figure:hover {
+    transform: scale(1.1);
+}
+
+figure p {
+  text-align: justify;
+  margin: 1rem;
+}
+
+figure h2 {
+  margin: 1rem;
+}
+
+figure a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+@media (min-width: 600px){
+  .main {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    flex-flow: wrap;
+  }
+}

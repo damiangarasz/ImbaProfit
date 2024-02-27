@@ -1,0 +1,64 @@
+/* ------------------- stopka ------------------- */
+.figure-1,
+.figure-2,
+.figure-3,
+.figure-4 {
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  transition: 0.5s;
+  animation: moja-cofam 0.5s;
+}
+
+.figure-1:hover,
+.figure-2:hover,
+.figure-3:hover,
+.figure-4:hover {
+  animation: moja 0.5s forwards;
+}
+
+@keyframes moja {
+  0% {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes moja-cofam {
+    0% {clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);}
+    100% {clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);}
+}
+
+.figure-1:hover + .figure-2 {
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 25% 100%);
+}
+.figure-2:hover + .figure-3 {
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 25% 100%);
+}
+.figure-3:hover + .figure-4 {
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 25% 100%);
+}
+
+.stopka {
+  display: flex;
+  margin: auto;
+  width: 1000px;
+}
+
+.stopka figure {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.stopka figure:nth-of-type(2),
+.stopka figure:nth-of-type(3),
+.stopka figure:nth-of-type(4) {
+  margin-left: -4.7rem;
+}
+
+.stopka figure p {
+  position: absolute;
+  bottom: 0;
+  visibility: hidden;
+}

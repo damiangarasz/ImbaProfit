@@ -26,7 +26,7 @@ main {
 p img {
   width: 250px;
   position: absolute;
-  top: -180px;
+  top: -210px;
   right: 20;
 }
 
@@ -34,6 +34,8 @@ p img {
   display: flex;
   justify-content: center;
   gap: 3px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .stopka-img {
