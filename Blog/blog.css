@@ -3,19 +3,52 @@ body {
 }
 
 small {
-    margin-left: 1rem;
+  margin-left: 1rem;
+}
+
+.main {
+  margin: auto;
+  max-width: 1200px;
 }
 
 figure {
-  max-width: 300px;
-  margin: 1.5rem auto;
-  border: 1px solid black;
-  background-color: rgba(244, 244, 244, 0.536);
+  width: 300px;
+  margin-top: 1.5rem;
+  margin-left: -3rem;
   transition: 0.5s ease;
+  position: relative;
+}
+
+figure img {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  width: 500px;
+}
+
+figure:nth-child(2) {
+  top: 168px;
+}
+
+figure:nth-child(2),
+figure:nth-child(3) {
+  margin-left: 2.4rem;
+}
+
+.fig {
+  position: absolute;
+  bottom: 90px;
+  left: 70px;
+  width: 400px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(240, 255, 255, 0.511);
+}
+
+.fig p {
+  font-size: 20px;
+  font-weight: 500;
 }
 
 figure:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 figure p {
@@ -28,17 +61,57 @@ figure h2 {
 }
 
 figure a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
+}
+.main {
+  display: flex;
 }
 
-
-
-@media (min-width: 600px){
+@media (max-width: 1170px) {
   .main {
-    display: flex;
-    max-width: 1200px;
+    width: 1050px;
     margin: auto;
-    flex-flow: wrap;
   }
+
+  figure img {
+    width: 350px;
+  }
+
+  .fig {
+    width: 250px;
+    left: 55px;
+    bottom: 40px;
+  }
+
+  .fig p {
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .fig h2 {
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+  }
+
+  small {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  figure:nth-child(2) {
+    margin-left: 0;
+    top: 120px;
+  }
+
+  figure:nth-child(1) {
+    left: 75px;
+  }
+
+  figure:nth-child(3) {
+    position: absolute;
+    right:135px;
+  }
+
 }
