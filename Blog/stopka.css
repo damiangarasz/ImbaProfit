@@ -13,6 +13,7 @@
 .figure-3:hover,
 .figure-4:hover {
   animation: moja 0.5s forwards;
+  cursor: pointer;
 }
 
 @keyframes moja {

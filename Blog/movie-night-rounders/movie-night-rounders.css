@@ -30,24 +30,6 @@ p img {
   right: 20;
 }
 
-.stopka {
-  display: flex;
-  justify-content: center;
-  gap: 3px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.stopka-img {
-  width: 100%;
-}
-
-figure {
-  width: 30vw;
-  height: 0px;
-  margin: 2rem 1rem;
-  padding: 0;
-}
 
 .divider {
   border-top: 1px solid black;

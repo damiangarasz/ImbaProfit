@@ -7,13 +7,13 @@ const Router = {
       });
     });
 
-    document.querySelectorAll(".nav-link").forEach((link) => {
-      link.addEventListener("click", (event) => {
-        event.preventDefault();
-        const url = event.target.getAttribute("href");
-        Router.go(url);
-      });
-    });
+    // document.querySelectorAll(".nav-link").forEach((link) => {
+    //   link.addEventListener("click", (event) => {
+    //     event.preventDefault();
+    //     const url = event.target.getAttribute("href");
+    //     Router.go(url);
+    //   });
+    // });
 
     window.addEventListener("popstate", (event) => {
       Router.go(event.state.path, false);
@@ -29,12 +29,10 @@ const Router = {
     let pageElement = null;
 
     switch (path) {
-      case "/home/":
-        return;
-      case "/videos/":
-        return;
-      case "/blog/":
-        return;
+      // case "/Blog/":
+      //   // tutaj
+      //   window.open("./blog.html", "_self");
+      //   return;
       case "/strategy/":
         return;
       case "/charts/":
