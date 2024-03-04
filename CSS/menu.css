@@ -1,5 +1,5 @@
 .logo1 {
-  color:black;
+  color: black;
   font-family: var(--font-logo);
   text-shadow: -2px 5px 10px #ebb632;
   font-size: var(--font-size-logo);
@@ -39,6 +39,10 @@ header {
 .header {
   display: flex;
   align-items: center;
+}
+
+.header a {
+  text-decoration: none;
 }
 
 .logo-img {
