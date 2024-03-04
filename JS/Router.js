@@ -22,22 +22,26 @@ const Router = {
     Router.go(window.location.pathname);
   },
   go: function go(path, addToHistory = true) {
-    if (addToHistory) {
-      history.pushState({ path }, null, path);
-    }
+    // if (addToHistory) {
+    //   history.pushState({}, null, path);
+    // }
 
     let pageElement = null;
 
     switch (path) {
-      case "./Blog/blog.html":
+      case "./blog.html":
+        history.pushState({path}, null, "../Blog/blog.html");
         window.location.href = "../Blog/blog.html";
+       
         return;
       case "/strategy/":
         return;
       case "/charts/":
+        history.pushState({path}, null, path);
         document.querySelector(".content").innerHTML = "";
         pageElement = document.createElement("charts-page");
         document.querySelector(".content").appendChild(pageElement);
+        
         return;
       case "/socials/":
         return;

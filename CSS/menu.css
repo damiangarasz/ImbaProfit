@@ -92,3 +92,47 @@ header {
 .svg {
   fill: #ebb632;
 }
+
+@media (min-width: 650px) {
+  .logo-img {
+    height: 3.5rem;
+    margin-left: 1.5rem;
+  }
+
+  .logo {
+    margin-left: 2rem;
+  }
+
+  .logo1, 
+  .logo2 {
+    font-size: 45px;
+  }
+
+}
+
+@media (min-width: 860px) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 75px;
+    background-color: transparent;
+    width: 400px;
+  }
+
+  .main-nav a {
+    color: rgb(195, 195, 195);
+  }
+
+  .main-nav a:hover {
+    color:#ebb632;
+  }
+
+  .main-nav li:first-child {
+    display: none;
+  }
+
+  .hamburger-toggle {
+    display: none;
+  }
+}
