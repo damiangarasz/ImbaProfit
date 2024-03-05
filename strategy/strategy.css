@@ -10,6 +10,11 @@
 
 .miniaturka {
   height: 8rem;
+  border: 1px solid black;
+}
+
+.miniaturka:hover {
+  cursor: pointer;
 }
 
 .propozycje {
