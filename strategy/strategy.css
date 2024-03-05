@@ -4,5 +4,24 @@
 
 .video {
   width: 560px;
+  height: 315px;
   margin: auto;
+}
+
+.miniaturka {
+  height: 8rem;
+}
+
+.propozycje {
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 1000px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.handler {
+  display: flex;
+  margin: auto;
+  max-width: 1050px;
 }
