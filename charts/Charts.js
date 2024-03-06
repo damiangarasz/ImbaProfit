@@ -21,7 +21,7 @@ export class Charts extends HTMLElement {
 
     const buttonyStack = this.root.querySelectorAll(".button-stack");
     const buttony = this.root.querySelectorAll(".button-poz");
-    const sheet = this.root.querySelector(".sheet-chart");
+  
 
     const elementLoL = document.createElement("style");
     async function doStuff(inject) {

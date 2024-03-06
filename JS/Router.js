@@ -30,18 +30,22 @@ const Router = {
 
     switch (path) {
       case "./blog.html":
-        history.pushState({path}, null, "../Blog/blog.html");
+       history.pushState({ path }, null, "../Blog/blog.html");
         window.location.href = "../Blog/blog.html";
-       
+
         return;
       case "/strategy/":
+        history.pushState({ path }, null, path);
+        document.querySelector(".content").innerHTML = "";
+        pageElement = document.createElement("strategy-page");
+        document.querySelector(".content").appendChild(pageElement);
         return;
       case "/charts/":
-        history.pushState({path}, null, path);
+        history.pushState({ path }, null, path);
         document.querySelector(".content").innerHTML = "";
         pageElement = document.createElement("charts-page");
         document.querySelector(".content").appendChild(pageElement);
-        
+
         return;
       case "/socials/":
         return;
