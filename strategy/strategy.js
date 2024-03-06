@@ -35,54 +35,54 @@ export class Strategy extends HTMLElement {
     const arrMiniaturek = [];
 
     const basicPokerMath = new objObj(
-      "./strategy/min/basicpokermath.webp",
+      "./min/basicpokermath.webp",
       "https://youtu.be/aVh7rUAkSlM",
       "Basic Poker Math"
     );
 
     const fishmasterBTN = new objObj(
-      "./strategy/min/fishmasterBTN.jpg",
+      "./min/fishmasterBTN.jpg",
       "https://youtu.be/fpuZyS3Dk9k",
       "Fishmaster BTN"
     );
 
     const fishmasterHUBB = new objObj(
-      "./strategy/min/fishmasterHUBB.webp",
+      "./min/fishmasterHUBB.webp",
       "https://youtu.be/4BSgk9zXvYc",
       "Fishmaster HUBB"
     );
 
     const fishmasterHUSB = new objObj(
-      "./strategy/min/fishmasterHUSB.jpg",
+      "./min/fishmasterHUSB.jpg",
       "https://youtu.be/OS4Jjs2j1Mk",
       "Fishmaster HUSB"
     );
 
     const fishmasterSBvBB = new objObj(
-      "./strategy/min/fishmasterSBvBB.jpg",
+      "./min/fishmasterSBvBB.jpg",
       "https://youtu.be/cC-Ss0DagAQ",
       "Fishmaster SBvBB"
     );
 
     const gtoPreflopadjust = new objObj(
-      "./strategy/min/GTOpreflopadjust.jpg",
+      "./min/GTOpreflopadjust.jpg",
       "https://youtu.be/pNXZi_0MGJY",
       "GTO Preflop Adjust"
     );
 
     const lp1 = new objObj(
-      "./strategy/min/LP1.jpg",
+      "./min/LP1.jpg",
       "https://youtu.be/sohv1Oba_Xo",
       "Liveplay 1"
     );
 
     const lp2 = new objObj(
-      "./strategy/min/LP2.webp",
+      "./min/LP2.webp",
       "https://youtu.be/SUMuV9wTIRo",
       "Liveplay 2"
     );
 
-    const chwytak = document.querySelector(".propozycje");
+    const chwytak = this.root.querySelector(".propozycje");
 
     for (let n = 0; n < arrMiniaturek.length; n++) {
       const miniturka = document.createElement("img");
@@ -92,12 +92,12 @@ export class Strategy extends HTMLElement {
       chwytak.appendChild(miniturka);
     }
 
-    const chwytakMiniaturki = document.querySelectorAll(".miniaturka");
+    const chwytakMiniaturki = this.root.querySelectorAll(".miniaturka");
 
     for (let n of chwytakMiniaturki) {
       n.addEventListener("click", () => {
         const lapacz = n.getAttribute("data-value");
-        const inframe = document.querySelector(".inframe");
+        const inframe = this.root.querySelector(".inframe");
 
         switch (lapacz) {
           case "Basic Poker Math":
@@ -152,14 +152,14 @@ export class Strategy extends HTMLElement {
       });
     }
 
-    const lol = document.querySelectorAll(".button-scroll");
+    const lol = this.root.querySelectorAll(".button-scroll");
     let pozycja = 0;
 
     for (let n of lol) {
       n.addEventListener("click", (event) => {
         const lol = event.target.value;
         console.log(lol);
-        const element = document.querySelector(".propozycje");
+        const element = this.root.querySelector(".propozycje");
 
         if (lol == "right") {
           if (pozycja >= arrMiniaturek.length * 150) {

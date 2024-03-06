@@ -19,29 +19,26 @@ const Router = {
       Router.go(event.state.path, false);
     });
 
-    Router.go(window.location.pathname);
+    Router.go(location.pathname);
   },
   go: function go(path, addToHistory = true) {
-    // if (addToHistory) {
-    //   history.pushState({}, null, path);
-    // }
+    if (addToHistory) {
+      history.pushState({ path }, null, path);
+    }
 
     let pageElement = null;
-
+    //history.pushState({ path }, null, path);
     switch (path) {
       case "./blog.html":
-       history.pushState({ path }, null, "../Blog/blog.html");
         window.location.href = "../Blog/blog.html";
 
         return;
       case "/strategy/":
-        history.pushState({ path }, null, path);
         document.querySelector(".content").innerHTML = "";
         pageElement = document.createElement("strategy-page");
         document.querySelector(".content").appendChild(pageElement);
         return;
       case "/charts/":
-        history.pushState({ path }, null, path);
         document.querySelector(".content").innerHTML = "";
         pageElement = document.createElement("charts-page");
         document.querySelector(".content").appendChild(pageElement);
