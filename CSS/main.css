@@ -1,6 +1,6 @@
 .video-placeholder {
   background-color: black;
-  width: auto;
+  width: 100vw;
   display: flex;
   justify-content: center;
 }

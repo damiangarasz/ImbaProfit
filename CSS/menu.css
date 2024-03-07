@@ -33,7 +33,7 @@ header {
       rgba(33, 33, 33, 0) 100%
     );
   height: 75px;
-  min-width: 460px;
+  /* min-width: 460px; */
 }
 
 .header {
@@ -65,7 +65,7 @@ header {
   flex-direction: column;
   align-items: center;
   background-color: #c79c2ff3;
-  width: 200px;
+  width: 50vw;
   height: 100vh;
   justify-content: space-evenly;
   z-index: 1000;
@@ -103,11 +103,10 @@ header {
     margin-left: 2rem;
   }
 
-  .logo1, 
+  .logo1,
   .logo2 {
     font-size: 45px;
   }
-
 }
 
 @media (min-width: 860px) {
@@ -125,7 +124,7 @@ header {
   }
 
   .main-nav a:hover {
-    color:#ebb632;
+    color: #ebb632;
   }
 
   .main-nav li:first-child {

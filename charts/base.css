@@ -125,3 +125,23 @@ body {
   display: flex;
   gap: 10px;
 }
+
+@media only screen and (max-width: 450px) {
+  .button-poz {
+    width: 50px;
+    height: 4vh;
+  }
+
+  .button-stack {
+    width: 50px;
+    height: 4vh;
+  }
+
+  .tabela {
+    font-size: 11px;
+  }
+  .tabela tr td {
+    height: 2.5vh;
+    width: 4vw;
+  }
+}

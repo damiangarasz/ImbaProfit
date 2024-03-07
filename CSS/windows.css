@@ -1,7 +1,7 @@
 .windows {
   height: calc(50vh - 50px - 2rem);
   display: grid;
-  min-width: 430px;
+  /* min-width: 430px; */
   grid-template-areas:
     "strategy charts"
     "socials contact";
@@ -13,6 +13,7 @@
   border-radius: 0;
   border: none;
   font-size: 2rem;
+  color: black;
 }
 
 .menu-button:hover,
@@ -48,4 +49,10 @@
 .icon {
   display: block;
   margin: auto;
+}
+
+@media only screen and (max-width: 445px) {
+  .video {
+    width: 100vw;
+  }
 }
