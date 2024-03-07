@@ -1,44 +1,61 @@
 body {
   background-color: aliceblue;
 }
-main {
-  display: grid;
-  rotate: -45deg;
-  width: 100%;
-}
-
-.title {
-  margin-top: 1.5rem;
-  margin-left: 3rem;
-  width: 350px;
-  font-size: 40px;
-  justify-self: center;
-}
-
-.p-1 {
-  transform: rotate(90deg);
-  width: 250px;
-  justify-self: center;
-  line-height: 25px;
-  position: relative;
-}
-
-p img {
-  width: 250px;
-  position: absolute;
-  top: -210px;
-  right: 20;
-}
-
 
 .divider {
   border-top: 1px solid black;
 }
 
+p img {
+  display: none;
+}
+
+.title {
+  margin: 1rem 1rem 0 1rem;
+  font-size: 21px;
+}
+
+.p-1 {
+  text-align: justify;
+  margin: 1rem;
+}
+
+@media (min-width: 375px) {
+  main {
+    display: grid;
+    rotate: -45deg;
+    width: 100%;
+  }
+
+  .title {
+    margin: 1rem 1rem 0 1rem;
+    width: 250px;
+    font-size: 20px;
+    justify-self: center;
+  }
+
+  .p-1 {
+    transform: rotate(90deg);
+    width: 250px;
+    justify-self: center;
+    line-height: 25px;
+    position: relative;
+  }
+
+  p img {
+    display: block;
+    width: 150px;
+    position: absolute;
+    top: -110px;
+    left: 100px;
+    right: 20;
+  }
+}
+
 @media (min-width: 600px) {
   .title {
     font-size: 50px;
-    margin-left: 0;
+    margin: 2rem 2rem;
     width: 400px;
   }
 
@@ -49,9 +66,11 @@ p img {
 
   p img {
     width: 300px;
+    top: -230px;
+    left: 0;
   }
 }
 
 @media (min-width: 1000px) {
-    /* TODO */
+  /* TODO */
 }

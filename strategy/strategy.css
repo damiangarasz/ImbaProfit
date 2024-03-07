@@ -27,8 +27,19 @@
   max-width: 1050px;
 }
 
-@media only screen and (max-width: 460px) {
+.inframe {
+  width: 560px;
+  height: 315px;
+}
+
+@media only screen and (max-width: 570px) {
   .video {
-    /* width: 100vw; */
+    width: 290px;
+    height: 190px;
+  }
+
+  .inframe {
+    width: 290px;
+    height: 190px;
   }
 }

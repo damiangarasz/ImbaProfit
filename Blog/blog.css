@@ -69,49 +69,62 @@ figure a {
 }
 
 @media (max-width: 1170px) {
-  .main {
-    width: 1050px;
-    margin: auto;
-  }
-
   figure img {
     width: 350px;
   }
 
-  .fig {
-    width: 250px;
-    left: 55px;
-    bottom: 40px;
+  figure:nth-child(2) {
+    top: 128px;
+  }
+
+  figure:nth-child(2),
+  figure:nth-child(3) {
+    margin-left: -4rem;
+  }
+
+  figure {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .fig p {
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 16px;
   }
 
-  .fig h2 {
-    font-size: 17px;
-    margin: 0;
-    padding: 0;
+  figure h2 {
+    font-size: 18px;
   }
 
-  small {
-    font-size: 10px;
-    margin: 0;
-    padding: 0;
+  .fig {
+    bottom: 20px;
+    left: 40px;
+    width: 270px;
   }
-  figure:nth-child(2) {
-    margin-left: 0;
-    top: 120px;
-  }
+}
 
-  figure:nth-child(1) {
-    left: 75px;
+@media (max-width: 860px) {
+  .main {
+    flex-wrap: wrap;
   }
 
   figure:nth-child(3) {
-    position: absolute;
-    right:135px;
+    margin-left: 30px;
+  }
+  figure:nth-child(2) {
+    top: 140px;
+  }
+}
+
+@media (max-width: 650px) {
+  .main {
+    flex-direction: column;
   }
 
+  figure:nth-child(3) {
+    margin-left: auto;
+  }
+  figure:nth-child(2) {
+    top: 0px;
+    margin: auto;
+  }
 }

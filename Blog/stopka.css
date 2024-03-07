@@ -8,12 +8,32 @@
   animation: moja-cofam 0.5s;
 }
 
+.stopka figure p {
+  position: absolute;
+  bottom: 0;
+  visibility: hidden;
+}
+
 .figure-1:hover,
 .figure-2:hover,
 .figure-3:hover,
 .figure-4:hover {
   animation: moja 0.5s forwards;
   cursor: pointer;
+}
+
+.figure-1:hover p,
+.figure-2:hover p,
+.figure-3:hover p,
+.figure-4:hover p {
+  position: absolute;
+  bottom: 3px;
+  visibility: visible;
+  background-color: rgba(240, 248, 255, 0.494);
+  margin: 1rem 0;
+  font-size: 20px;
+  max-width: 100vw;
+  padding: 1rem;
 }
 
 @keyframes moja {
@@ -26,8 +46,12 @@
 }
 
 @keyframes moja-cofam {
-    0% {clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);}
-    100% {clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);}
+  0% {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+  100% {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
 }
 
 .figure-1:hover + .figure-2 {
@@ -58,8 +82,100 @@
   margin-left: -4.7rem;
 }
 
-.stopka figure p {
-  position: absolute;
-  bottom: 0;
-  visibility: hidden;
+@media only screen and (max-width: 980px) {
+  .stopka {
+    width: 600px;
+  }
+
+  .stopka-img {
+    width: 220px;
+  }
+
+  .figure-1:hover p,
+  .figure-2:hover p,
+  .figure-3:hover p,
+  .figure-4:hover p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .stopka-img {
+    width: 190px;
+  }
+
+  .stopka {
+    margin-left: 4rem;
+  }
+  .figure-1:hover p,
+  .figure-2:hover p,
+  .figure-3:hover p,
+  .figure-4:hover p {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .stopka-img {
+    width: 160px;
+  }
+
+  .figure-1:hover p,
+  .figure-2:hover p,
+  .figure-3:hover p,
+  .figure-4:hover p {
+    font-size: 16px;
+  }
+
+  .stopka {
+    width: 400px;
+    margin-left: 5rem;
+  }
+}
+
+@media only screen and (max-width: 495px) {
+  .stopka {
+    width: 320px;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .stopka figure p {
+    position: absolute;
+    bottom: 3px;
+    visibility: visible;
+    background-color: rgba(240, 248, 255, 0.494);
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .figure-1,
+  .figure-2,
+  .figure-3,
+  .figure-4 {
+    clip-path: none;
+    transition: none;
+    animation: none;
+    overflow: hidden;
+  }
+
+  .figure-1:hover,
+  .figure-2:hover,
+  .figure-3:hover,
+  .figure-4:hover {
+    animation: none;
+    cursor: pointer;
+  }
+
+  .stopka figure:nth-of-type(2),
+  .stopka figure:nth-of-type(3),
+  .stopka figure:nth-of-type(4) {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .stopka {
+    width: 160px;
+  }
 }
