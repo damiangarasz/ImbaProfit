@@ -49,6 +49,7 @@
 .icon {
   display: block;
   margin: auto;
+  pointer-events: none;
 }
 
 @media only screen and (max-width: 445px) {
