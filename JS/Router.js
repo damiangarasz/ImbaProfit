@@ -1,21 +1,21 @@
 const Router = {
   init: () => {
-    document.querySelectorAll(".menu-button").forEach((button) => {
-      button.addEventListener("click", (event) => {
+    document.querySelectorAll('.menu-button').forEach((button) => {
+      button.addEventListener('click', (event) => {
         const url = event.target.value;
         Router.go(url);
       });
     });
 
-    document.querySelectorAll(".nav-link").forEach((link) => {
-      link.addEventListener("click", (event) => {
+    document.querySelectorAll('.nav-link').forEach((link) => {
+      link.addEventListener('click', (event) => {
         event.preventDefault();
-        const url = event.target.getAttribute("href");
+        const url = event.target.getAttribute('href');
         Router.go(url);
       });
     });
 
-    window.addEventListener("popstate", (event) => {
+    window.addEventListener('popstate', (event) => {
       Router.go(event.state.path, false);
     });
 
@@ -29,24 +29,24 @@ const Router = {
     let pageElement = null;
     //history.pushState({ path }, null, path);
     switch (path) {
-      case "./blog.html":
-        window.location.href = "../Blog/blog.html";
+      case './blog.html':
+        window.location.href = '/blog.html';
 
         return;
-      case "/strategy/":
-        document.querySelector(".content").innerHTML = "";
-        pageElement = document.createElement("strategy-page");
-        document.querySelector(".content").appendChild(pageElement);
+      case '/strategy/':
+        document.querySelector('.content').innerHTML = '';
+        pageElement = document.createElement('strategy-page');
+        document.querySelector('.content').appendChild(pageElement);
         return;
-      case "/charts/":
-        document.querySelector(".content").innerHTML = "";
-        pageElement = document.createElement("charts-page");
-        document.querySelector(".content").appendChild(pageElement);
+      case '/charts/':
+        document.querySelector('.content').innerHTML = '';
+        pageElement = document.createElement('charts-page');
+        document.querySelector('.content').appendChild(pageElement);
 
         return;
-      case "/socials/":
+      case '/socials/':
         return;
-      case "/contact/":
+      case '/contact/':
         return;
     }
   },
