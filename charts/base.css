@@ -1,4 +1,4 @@
-@import url("./CSS-charts/placeholder.css");
+@import url('./charts/CSS-charts/placeholder.css');
 
 :root {
   --color-mr-c: orange;
@@ -24,7 +24,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  font-family: "Ubuntu Mono", monospace;
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 .chwytak {
