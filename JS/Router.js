@@ -30,7 +30,7 @@ const Router = {
     //history.pushState({ path }, null, path);
     switch (path) {
       case './blog.html':
-        window.location.href = '/Blog/blog.html';
+        window.location.href = '/ImbaProfit/Blog/blog.html';
 
         return;
       case '/strategy/':
