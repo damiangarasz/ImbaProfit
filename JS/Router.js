@@ -30,7 +30,7 @@ const Router = {
     //history.pushState({ path }, null, path);
     switch (path) {
       case './blog.html':
-        window.location.href = '/blog.html';
+        window.location.href = '/Blog/blog.html';
 
         return;
       case '/strategy/':
